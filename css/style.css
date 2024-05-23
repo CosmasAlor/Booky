@@ -15,13 +15,3 @@ h1  , th, .btn {
   
   
 }
-
-@media (min-width: 576px) {
-    .container, .container-sm {
-        max-width: 100%;
-    }
-.card {
-    width: 100% !important;
-}
-
-}
