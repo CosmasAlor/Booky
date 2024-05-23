@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BookMark</title>
+
+  <!-- load all Font Awesome v6 styles -->
+  <link href="fontawesome-free-6.5.2-web/css/all.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
+
+  <!-- support v4 icon references/syntax -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap" rel="stylesheet">
+  <link href="fontawesome-free-6.5.2-web/css/v4-shims.css" rel="stylesheet" />
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+
+
+  <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+
+
+  
+<main class="m-5">
+  
+<div class="quotes mt-5">
+    <div class="container">
+      
+        <div class="card w-75 mx-auto">
+            <div class="card-header text-center">
+              <h1>BookMark</h1>
+            </div>
+
+
+            <div class="card-body">
+              <blockquote class="blockquote mb-0" >
+
+                <div class="alert alert-danger py-2 d-none" id="vali">Please fill all the required filled </div>
+
+                  <input type="text" class="form-control is-valid my-3" id="webName" oninput="validateName(this)" placeholder="Website Name ...">
+                  <div class="alert alert-danger py-2 d-none">Start with an Alphabet Example: My website Name </div>
+
+                  <input type="text" class="form-control is-valid my-3" id="webUrl" oninput="validateName(this)" placeholder="Website URL">
+                  <div class="alert alert-danger py-2 d-none">Please put a valid link</div>
+              </blockquote>
+
+              <div class="button text-center">
+                <button id="add" type="button" class="btn btn-primary btn-lg" onclick="addUrl()">Add</button>
+                <button id="update" type="button" class="btn btn-warning btn-lg d-none" onclick="update()">Update</button>
+              </div>
+
+
+              <div class="container w-100 mx-auto mt-2">    
+                <input type="text" placeholder="Search By Nmae" class="form-control w-100" oninput="search()" id="search"/>
+              </div>
+
+            </div>
+          </div>
+
+
+
+    </div>
+</div>
+
+
+
+
+
+<div class="data mt-3">
+  <div class="container">  
+      <div class="card w-100 mx-auto" style="border-bottom: 0;">
+        <div class="table mx-auto">
+
+          <table class="w-100 p-4">
+            <thead>
+              <tr class="bg-dark text-white ">
+                <th class="text-center">Index</th>
+                <th class="text-center ">Website Name</th>
+                <th class="text-center">Action</th>
+            </tr>
+            </thead>
+            <tbody id="inner">
+            </tbody>
+          </table>
+         </div>
+      </div>
+  </div>
+</div>
+
+
+
+</main>
+<div class="text-center text-light bg-dark p-2 mt-5 fixed-bottom">
+  <p>Created with ❤ by Cosmas Alor </p>
+</div>
+    <script src="js/script.js"></script>
+</body>
+</html>
