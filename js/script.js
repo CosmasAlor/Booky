@@ -143,7 +143,7 @@ function validateName(element){
     var regex = {
 
         webName : /^[a-zA-Z]\w{1,10}\s?/,
-        webUrl : /(https:\/\/www\.|http:\/\/www\.|https:\/\/|http:\/\/)?[a-zA-Z0-9]{2,}(\.[a-zA-Z0-9]{2,})(\.[a-zA-Z0-9]{2,})?/gm,
+        webUrl : /^(https?:\/\/)?([a-z\d]([a-z\d-]*[a-z\d])*\.)+[a-z]{2,}(:\d+)?(\/[-a-z\d%_.~+]*)*(\?[;&a-z\d%_.~+=-]*)?(\#[-a-z\d_]*)?$/i,
               
     };
 
@@ -168,3 +168,4 @@ function validateName(element){
 
 
 }
+
